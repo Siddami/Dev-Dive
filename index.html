@@ -13,14 +13,18 @@
         <link rel="stylesheet" href="./styles/style.css">
     </head>
     <body>
-        <header>
+        <header id="header">
             <nav>
                 <h2>DevDive</h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Latest News</a></li>
-                    <li><a href="#">Newsletter</a></li>
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+                <label for="menu-toggle" class="menu-icon">
+                    <i class='bx bx-menu'></i>
+                </label>
+                <ul class="nav-list">
+                    <li  class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="#">About</a></li>
+                    <li class="nav-item"><a href="#">Latest News</a></li>
+                    <li class="nav-item"><a href="#">Newsletter</a></li>
                 </ul>
                 <div class="nav-btn">
                     <button>Sign Up</button>
@@ -41,49 +45,62 @@
                         <img src="./images/blog1.jpg" class="blog-image" alt="man working in front of pc">
                         <div class="blog-details">
                             <p class="author-date">Dev Sid . 12 Sep 2024</p>
-                            <div>
-                                <span class="blog-title">Mastering Debugging: Essential Tips for Faster Problem Solving</span>
-                                <i class='bx bx-right-top-arrow-circle'></i>
-                            </div>
+                                <a href="./pages/blog-post1.html" class="blog-link">
+                                    <div>
+                                        <span class="blog-title">Mastering Debugging: Essential Tips for Faster Problem Solving</span>
+                                        <i class='bx bx-right-top-arrow-circle'></i>
+                                    </div>
+                                </a>
                             <p class="blog-description">Discover proven debugging techniques that help streamline the process of identifying and fixing code issues. From using breakpoints effectively to leveraging logging and debugging tools, these tips will reduce frustration and save valuable time during development.</p>
                         </div>    
                     </article>
-                    <article class="blog-post blog2">
-                        <img src="./images/blog2.jpg" class="blog-image" alt="man working in front of pc">
-                        <div class="blog-details">
-                            <p class="author-date">AYS . 12 Sep 2024</p>
-                            <div>
-                                <span class="blog-title">The Ultimate Guide to Version Control with Git: Best Practices for Every Developer</span>
-                                <i class='bx bx-right-top-arrow-circle'></i>
+                    <section class="blog-post blogs2">
+                        <article class="blog2">
+                            <img src="./images/blog2.jpg" class="blog-image" alt="man working in front of pc">
+                            <div class="blog-details">
+                                <p class="author-date">AYS . 12 Sep 2024</p>
+                                    <a href="./pages/blog-post2.html" class="blog-link">
+                                        <div>
+                                            <span class="blog-title">The Ultimate Guide to Version Control with Git: Best Practices for Every Developer</span>
+                                            <i class='bx bx-right-top-arrow-circle'></i>
+                                        </div>
+                                    </a>
+                                <p class="blog-description">A detailed look at using Git effectively, with tips on branching, merging, and collaboration.</p>
                             </div>
-                            <p class="blog-description">A detailed look at using Git effectively, with tips on branching, merging, and collaboration.</p>
-                        </div>
-                    </article>
-                    <article class="blog-post blog3">
-                        <img src="./images/blog3.jpg" class="blog-image" alt="man working in front of pc">
-                        <div class="blog-details">
-                            <p class="author-date">Dami . 12 Sep 2024</p>
-                            <div>
-                                <span class="blog-title">Top 10 JavaScript Libraries You Should Know in 2024</span>
-                                <i class='bx bx-right-top-arrow-circle'></i>
+                        </article>
+                        <article class="blog3">
+                            <img src="./images/blog3.jpg" class="blog-image" alt="man working in front of pc">
+                            <div class="blog-details">
+                                <p class="author-date">Dami . 12 Sep 2024</p>
+                                    <a href="./pages/blog-post3.html" class="blog-link">
+                                        <div>
+                                            <span class="blog-title">Top 10 JavaScript Libraries You Should Know in 2024</span>
+                                            <i class='bx bx-right-top-arrow-circle'></i>
+                                        </div>
+                                    </a>
+                                <p class="blog-description">Stay ahead of the curve with this updated list of essential JavaScript libraries.</p>
                             </div>
-                            <p class="blog-description">Stay ahead of the curve with this updated list of essential JavaScript libraries.</p>
-                        </div>
-                    </article>
+                        </article>
+                    </section>
                     <article class="blog-post blog4">
                         <img src="./images/blog4.jpg" class="blog-image" alt="man working in front of pc">
                         <div class="blog-details">
                             <p class="author-date">The Dev . 12 Sep 2024</p>
-                            <div>
-                                <span class="blog-title">From Junior to Senior Developer: Skills You Need to Level Up</span>
-                                <i class='bx bx-right-top-arrow-circle'></i>
-                            </div>
+                                <a href="./pages/blog-post4.html" class="blog-link">
+                                    <div>
+                                        <span class="blog-title">From Junior to Senior Developer: Skills You Need to Level Up</span>
+                                        <i class='bx bx-right-top-arrow-circle'></i>
+                                    </div>
+                                </a>
                             <p class="blog-description">Ready to take your career to the next level? This guide breaks down the technical and soft skills you need to transition from junior to senior developer, covering everything from mastering design patterns to improving code quality and effective communication in a team setting.</p>
                         </div>
                     </article>
                 </div>
             </section>
         </main>
-        <!-- <footer>footer</footer> -->
+        <footer>
+            <small>© 2023 Created by Siddiqat</small>
+            <a href="#header"><i class='bx bxs-chevrons-up' ></i></a>
+        </footer>
     </body>
 </html>
