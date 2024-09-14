@@ -46,9 +46,19 @@ article{
     padding: 1rem;
     font-family: "Mukta", Courier, monospace; ;
     line-height: 1cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
 }
 
-article>p{
+article section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-heading p{
     color:#a7453b;
     font-weight: bold;
     padding-block: 1rem;
@@ -60,12 +70,28 @@ article h1{
     line-height: 2cm;
 }
 
-.list-section{
-    padding: 1.5rem;
+.blog-sec{
+    text-align: justify;
 }
 
+@media (min-width:320px) and (max-width:800px){
+    .recents{
+        display: none;
+    }
+    
+    .article-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
 
-.lists h3, .lists li::marker{
-    font-weight: bold;
-    font-size: 1.5rem;
+    .blog-heading{
+        padding-top: 4rem;
+        font-size: 2rem;
+    }
+
+    .article{
+        width: 100%;
+    }
 }
