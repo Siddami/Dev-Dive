@@ -151,11 +151,33 @@ li a:hover{
     width: 85%;
 }
 
-.blog-post {
+.other-blog-container{
+    padding-top: 1rem;
+}
+
+.other-blogs{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1.5em;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.other-blog-container h2{
+    font-weight: bold;
+    padding-block: 1rem;
+    
+}
+
+.blog-post .blog-items {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;          
+    overflow: hidden; 
+    flex: 1 1 45%;         
 }
 
 .blog-image{
@@ -194,7 +216,7 @@ li a:hover{
     height: 50%;
 }
   
-.blog2, .blog3, .blog4 {
+.blog2, .blog3, .blog4, .blog5, .blog6, .blog7, .blog8 {
     display: flex;
     flex-direction: row;  
     gap: 1.5rem;            
@@ -203,12 +225,12 @@ li a:hover{
     box-shadow: 2px 2px 2px 2px rgba(175, 173, 173, 0.884);
 }
 
-.blog2 img, .blog3 img, .blog4 img {
+.blog2 img, .blog3 img, .blog4 img , .blog5 img, .blog6 img, .blog7 img, .blog8 img{
     width: 50%;          
     height: 100%;        
 }
 
-.blog2 .blog-details, .blog3 .blog-details, .blog4 .blog-details {
+.blog2 .blog-details, .blog3 .blog-details, .blog4 .blog-details ,.blog5 .blog-details .blog6 .blog-details .blog7 .blog-details .blog8 .blog-details{
     justify-content: space-between;
     width: 60%;           
 }
@@ -284,10 +306,7 @@ footer a{
 }
 
 /* TABBLET VIEW */
-@media (min-width:939px) and (max-width:1220px){
-    header{
-        height: 55vh;
-    } 
+@media (min-width:801px) and (max-width:1220px){
     
     .recent-blogs, .container h2{
         width: 95%;
@@ -296,7 +315,7 @@ footer a{
     .header-text{
         width: 100%;
         padding-inline: 1rem;
-        padding-top: 30rem;
+        padding-top: 8rem;
     }
 }
 
@@ -304,7 +323,7 @@ footer a{
 
 /* MOBILE VIEW */
 
-@media (min-width:320px) and (max-width:938px){
+@media (min-width:320px) and (max-width:800px){
     nav{
         justify-content: space-between;
         padding-inline: 1rem;
@@ -335,7 +354,7 @@ footer a{
         color: white;
     }
 
-    .recent-blogs, .container h2 {
+    .recent-blogs, .container h2 ,.other-blogs {
         width: 100%;
     }
 
@@ -344,12 +363,12 @@ footer a{
         flex-direction: column;
     }
 
-    .blog2, .blog3, .blog4{
+    .blog2, .blog3, .blog4, .blog5, .blog6, .blog7, .blog8{
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .blog2 img, .blog3 img, .blog4 img, .blog2 .blog-details, .blog3 .blog-details, .blog4 .blog-details{
+    .blog2 img, .blog3 img, .blog4 img, .blog2 .blog-details, .blog3 .blog-details, .blog4 .blog-details ,.blog5 .blog-details .blog6 .blog-details .blog7 .blog-details .blog8 .blog-details{
         width: 100%;
     }
 
